@@ -1,0 +1,13 @@
+<h1>Restaurants</h1>
+<a href="/restaurants/new">Create a New Restaurant</a>
+<ul>
+<% @restaurants.each do |r| %>
+  <li><%= "Name: #{r.name}" %></li>
+  <ul>
+    <li>Address:</li>
+    <li><%= "#{r.address}"%></li>
+    <li><%= "#{r.city}, #{r.state} #{r.zip}"%></li>
+  </ul>
+<% end %>
+</ul>
+

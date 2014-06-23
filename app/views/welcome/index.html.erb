@@ -1,0 +1,12 @@
+<h1>Recent Restaurants</h1>
+
+<ul>
+<% @restaurants.each do |r| %>
+  <li><%= "Name: #{r.name} - Posted On: #{r.created_at}" %></li>
+  <ul>
+    <li>Address:</li>
+    <li><%= "#{r.address}"%></li>
+    <li><%= "#{r.city}, #{r.state} #{r.zip}"%></li>
+  </ul>
+<% end %>
+</ul>
