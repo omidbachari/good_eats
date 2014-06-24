@@ -1,5 +1,6 @@
 <h1>Recent Restaurants</h1>
-
+<a href='/restaurants'>List of Restaurants</a><br>
+<a href='/restaurants/new'>Create a new Restaurant</a>
 <ul>
 <% @restaurants.each do |r| %>
   <li><%= "Name: #{r.name} - Posted On: #{r.created_at}" %></li>
